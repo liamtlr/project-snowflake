@@ -1,20 +1,18 @@
 import { signUp, signIn, logOut, cleanDatabase } from './helpers.js';
 
-describe('my module', function () {
-  beforeEach(function () {
-    cleanDatabase();
-  });
-});
+  // beforeEach(function () {
+  //   cleanDatabase();
+  // });
+  //
 
-
-describe('Running the signUp helper', function() {
+describe('Running the signUp helper @watch', function() {
   it('should sign a user up', function () {
     signUp();
     expect(browser.getUrl()).to.equal("http://localhost:3000/main");
   });
 });
 
-describe('Running the logOut helper', function() {
+describe('Running the logOut helper @watch', function() {
     it('should log a user out', function () {
       logOut();
       expect(browser.getUrl()).to.equal("http://localhost:3000/main");
@@ -55,5 +53,7 @@ describe('Creating a profile', function() {
       return Profiles.findOne( { bio: 'The worst painter' } );
     });
     expect ( getProfile.bio ).to.equal( 'The worst painter');
+    cleanDatabase();
   });
+
 });
