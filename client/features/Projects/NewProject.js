@@ -1,6 +1,6 @@
 Template.NewProject.events({
   'submit #insertProjectForm'(event) {
-    console.log("clicky!")
+    FlashMessages.sendInfo("Project created")
     FlowRouter.go('view-projects');
   },
 });

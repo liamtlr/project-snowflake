@@ -4,3 +4,10 @@ Template.UpdateProject.helpers({
         return Projects.findOne({_id: id});
     }
 });
+
+Template.UpdateProject.events({
+  'submit #updateProjectForm'(event) {
+    FlowRouter.go('view-projects');
+    FlashMessages.sendSuccess("Project updated");
+  },
+});
