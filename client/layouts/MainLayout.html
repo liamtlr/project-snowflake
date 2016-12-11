@@ -1,16 +1,20 @@
 <template name="MainLayout">
-  <header>
-    <h1> Project Snowflake </h1>
-    <!-- {{> navigation}} -->
-  </header>
+
 
   <main class="main-layout">
     {{#if currentUser}}
     {{else}}
       <!-- {{> register}} -->
     {{/if}}
-    {{> Header}}
-    {{> SideNav}}
-    {{> Template.dynamic template=main}}
+    <div>
+      {{> Header}}
+    </div>
+    <div class="pure-g">
+        <div class="pure-u-4-24">{{> SideNav}}</div>
+        <div class="pure-u-20-24">{{> Template.dynamic template=main}}</div>
+    </div>
+
+
+
   </main>
 </template>

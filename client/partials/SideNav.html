@@ -1,17 +1,24 @@
 <template name="SideNav">
-  <nav class="side-nav">
-    <ul>
-      {{#if currentUser}}
-      <li>
-        <a href="/profile"><i class="fa fa-list"></i>Profile</a>
-      </li>
-      <li>
-        <a href="/project/new"><i class="fa fa-plus"></i>Add Project</a>
-      </li>
-      {{/if}}
-      <li>
-        <a href="/projects"><i class="fa fa-snowflake-o"></i> View Projects</a>
-      </li>
-    </ul>
-  </nav>
+
+
+  <style>
+      .custom-restricted-width {
+          /* To limit the menu width to the content of the menu: */
+
+          /* Or set the width explicitly: */
+           width: 10em; 
+      }
+      </style>
+      <div class="pure-menu custom-restricted-width">
+          <span class="pure-menu-heading">MENU</span>
+
+          <ul class="pure-menu-list">
+            {{#if currentUser}}
+              <li class="pure-menu-item">{{> loginButtons}}</li>
+              <li class="pure-menu-item"><a href="/profile" class="pure-menu-link">Profile</a></li>
+              <li class="pure-menu-item"><a href="/project/new" class="pure-menu-link">Add Project</a></li>
+              <li class="pure-menu-item"><a href="/projects" class="pure-menu-link">View projects</a></li>
+            {{/if}}
+          </ul>
+      </div>
 </template>
