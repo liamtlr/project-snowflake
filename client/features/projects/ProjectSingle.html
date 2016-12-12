@@ -1,4 +1,5 @@
 <template name='ProjectSingle'>
+  {{getDistance}}
   <p>Description: {{project.description}}</p>
   <p>Status: {{ getStatus}}</p>
   {{ #if goingAhead }}
@@ -15,7 +16,7 @@
   {{ /each }}
 </ul>
 <p>Location:</p>
-{{>map}}
+<!-- {{>map}} -->
 {{ #if userSignedIn }}
       {{ #if currentUserProject }}
         <a href="/project/update/{{project._id}}">Update</a>

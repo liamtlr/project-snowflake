@@ -78,6 +78,13 @@ Template.ProjectSingle.helpers({
     var currentUser = Meteor.userId();
     return !!currentUser
   },
+  getDistance(){
+    var projectLocation = currentProject().location;
+    var userLocation = currentUserProfile().location;
+    var singleApiCall = Meteor.call("makeApiCall", projectLocation, userLocation);
+    console.log("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+    console.log(singleApiCall);
+  }
 });
 
 Template.ProjectSingle.events({
