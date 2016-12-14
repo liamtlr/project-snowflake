@@ -140,6 +140,10 @@ Template.ProjectSingle.events({
     Meteor.call('removeProjectfromProfile', profile_id, id);
     Meteor.call('removeUserFromProject', id, currentUserId(), currentUserEmail(), currentProject(),  volunteers);
     FlowRouter.go('view-projects');
+  },
+  'submit #insertBroadcastForm' (){
+    console.log("CLICKY")
+    // FlowRouter.go('view-projects');
   }
 });
 

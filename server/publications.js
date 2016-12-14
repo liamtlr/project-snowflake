@@ -12,3 +12,7 @@ Meteor.publish('profiles', function(){
 Meteor.publish('images', function(){
     return Images.find({});
 });
+
+Meteor.publish('broadcasts', function(){
+    return Broadcasts.find({});
+});
