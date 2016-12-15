@@ -1,16 +1,21 @@
 <template name="Profile">
-  <h3>I'm here!</h3>
-  <div class="map-container-profile">
+  <section>
+  <div class="mainDiv">
+    <h3>I'm here!</h3>
+  <div id="divOne" class="boxes">
     {{>profileMap}}
   </div>
-  <div class="thumbImage-container">
+  <div id="divTwo" class="boxes">
     {{>imageView}}
   </div>
+  </div>
+  <br />
+  </section>
 
-  <h3>Profile</h3>
+  <div class="profile-header">
+  <h4>Profile</h4>
   <h4>{{profile.bio}}</h4>
-
-
+  </div>
 
 
   <h3>Skills and Projects</h3>
@@ -69,7 +74,7 @@
   <div class="imageView">
     {{#with image}}
       <div>
-        <a href="/profile/{{profile._id}}"><img src="{{image.url store='thumbs' }}" alt="" class="thumbImage"></a>
+        <a href="/profile/{{profile._id}}"><img src="{{this.url store='images' }}" alt="" class="fullImage" /></a>
       </div>
     {{/with}}
   </div>
