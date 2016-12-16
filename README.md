@@ -2,7 +2,7 @@
 
 ### A.K.A Project Snowflake
 
-[Imgur](http://i.imgur.com/HadrXnD.png)
+![Imgur](http://i.imgur.com/HadrXnD.png)
 
 ## The concept
 
