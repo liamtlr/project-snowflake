@@ -37,7 +37,7 @@ Features for the next sprint:
 * Calendar
 * Autosuggest for skills
 * Broadcast function between project organiser and volunteers
-* Gamification: volunteers get points and no shows get bard karma
+* Gamification: volunteers get points and no shows get bad karma
 
 ## What went well
 
