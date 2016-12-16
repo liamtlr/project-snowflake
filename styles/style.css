@@ -157,19 +157,3 @@ button {
     max-width:	46.923em; /* 610/13 */
     *max-width:	45.750em; /* 610/13.3333 - for IE */
 }
-
-.boxes{
-	width:50%;
-	float:left;
-	}
-	#mainDiv{
-		width:50%;
-margin:auto;
-	}
-	img{
-		max-width:100%;
-	}
-
-  .profile-header{
-    text-align:left;
-  }
