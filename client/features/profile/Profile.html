@@ -1,22 +1,25 @@
 <template name="Profile">
-  <section>
   <div class="mainDiv">
     <h3>I'm here!</h3>
-  <div id="divOne" class="boxes">
+  <div id="divOne" style="float: left; width: 500px;">
     {{>profileMap}}
   </div>
-  <div id="divTwo" class="boxes">
+  <div id="divTwo" style="float: left; width: 200px;">
     {{>imageView}}
   </div>
   </div>
-  <br />
-  </section>
 
-  <div class="profile-header">
-  <h4>Profile</h4>
-  <h4>{{profile.bio}}</h4>
+  <div id="profile-header">
+  <h3></h3>
+  <table style="width:50%">
+  <tr>
+    <h3>
+      Profile
+    </h3>
+  <td>{{profile.bio}}</td>
+  </tr>
+  </table>
   </div>
-
 
   <h3>Skills and Projects</h3>
   <table style="width:100%">
