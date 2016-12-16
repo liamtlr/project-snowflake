@@ -1,8 +1,8 @@
-# I'm Im!
+# I'm In!
 
 ### A.K.A Project Snowflake
 
-![Homescreen](http://imgur.com/a/hoZGU)
+[Imgur](http://i.imgur.com/HadrXnD.png)
 
 ## The concept
 
@@ -21,7 +21,7 @@ https://imin.eu.meteorapp.com
 * Login: it's pretty straightforward
 * Create a profile: enter some brief details, an optional profile picture and drop the pin in the area you'd like receive search results
 * View projects: Projects are displayed by default in chronological order (closest to furthest away). You can also sort projects by your location, its status, or filter them by your skills
-* Volunteer
+* Volunteer: Volunteer for a project that interests you
 * Add a project: Create a project by entering a few details including the number of people you need, and the specific skills required
 
 # Technical stuff
